@@ -16,7 +16,7 @@ func DefaultFlags() []cli.Flag {
 			Name:   "http-port",
 			Value:  "8081",
 			Usage:  "IP to bind webserver",
-			EnvVar: "WEBTEST_HTTP_HOST",
+			EnvVar: "WEBTEST_HTTP_PORT",
 		},
 		cli.BoolFlag{
 			Name:   "debug",
