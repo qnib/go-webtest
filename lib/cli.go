@@ -21,7 +21,7 @@ func DefaultFlags() []cli.Flag {
 		cli.BoolFlag{
 			Name:   "debug",
 			Usage:  "Be more verbose..",
-			EnvVar: "RCUDAD_DEBUG",
+			EnvVar: "WEBTEST_DEBUG",
 		},
 	}
 }
