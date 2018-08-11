@@ -1,5 +1,5 @@
 ---
-version: 0.1.1
+version: 0.1.2
 name: go-webtest
 description: "Webtest stack"
 maintainers:
@@ -27,4 +27,4 @@ services:
 
 ---
 docker:
-  image: qnib/go-webtest:v0.1.1
+  image: qnib/go-webtest:v0.1.2
