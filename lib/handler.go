@@ -63,6 +63,7 @@ func callMeBackHelp(w http.ResponseWriter, req *http.Request, _ httprouter.Param
 	fmt.Fprintln(w, ">> Please send a request body")
 	http.Error(w, `e.g.: curl -X POST -H "Content-Type: application/json" -d  '{"path":"/echo","host":"scooterlabs.com"}' 127.0.0.1:8081/callmeback`, 400)
 }
+
 func callMeBack(w http.ResponseWriter, req *http.Request, params httprouter.Params){
 	if req.Body == nil {
 		callMeBackHelp(w, req, params)
