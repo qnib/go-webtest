@@ -69,6 +69,7 @@ func callMeBack(w http.ResponseWriter, req *http.Request, params httprouter.Para
 		callMeBackHelp(w, req, params)
 		return
 	}
+	fmt.Fprintf(w, "Container handling callback: %s\n", getCntName())
 	var cb CallBackRequest
 	err := json.NewDecoder(req.Body).Decode(&cb)
 	if err != nil {
